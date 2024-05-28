@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="LogoutSteps(failed)">
+    <classes>
+      <class name="stepdefin.LogoutSteps">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testLogout" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- stepdefin.LogoutSteps -->
+    </classes>
+  </test> <!-- LogoutSteps(failed) -->
+  <test thread-count="5" parallel="classes" name="ProductDisplaySteps(failed)">
+    <classes>
+      <class name="stepdefin.ProductDisplaySteps">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testProductDetails" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- stepdefin.ProductDisplaySteps -->
+    </classes>
+  </test> <!-- ProductDisplaySteps(failed) -->
+  <test thread-count="5" parallel="classes" name="WishListSteps(failed)">
+    <classes>
+      <class name="stepdefin.WishListSteps">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- stepdefin.WishListSteps -->
+    </classes>
+  </test> <!-- WishListSteps(failed) -->
+  <test thread-count="5" parallel="classes" name="MyAccountInfoSteps(failed)">
+    <classes>
+      <class name="stepdefin.MyAccountInfoSteps">
+        <methods>
+          <include name="testEditAccount" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- stepdefin.MyAccountInfoSteps -->
+    </classes>
+  </test> <!-- MyAccountInfoSteps(failed) -->
+  <test thread-count="5" parallel="classes" name="ChangePwdSteps(failed)">
+    <classes>
+      <class name="stepdefin.ChangePwdSteps">
+        <methods>
+          <include name="testChangePassword" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- stepdefin.ChangePwdSteps -->
+    </classes>
+  </test> <!-- ChangePwdSteps(failed) -->
+  <test thread-count="5" parallel="classes" name="AddressBookSteps(failed)">
+    <classes>
+      <class name="stepdefin.AddressBookSteps">
+        <methods>
+          <include name="addNewAddress" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- stepdefin.AddressBookSteps -->
+    </classes>
+  </test> <!-- AddressBookSteps(failed) -->
+</suite> <!-- Failed suite [Suite] -->
